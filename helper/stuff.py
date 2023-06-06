@@ -29,12 +29,12 @@ async def up(event):
 async def start(event):
     ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.reply(
-        f"Hi `{ok.user.first_name}`\nThis is A CompressorBot Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
+        f"Hi `{ok.user.first_name}`\nThis is A CompressorBot Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.\nMade with Love By @MOviezAddakan ❤️",
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
-                Button.url("SOURCE CODE", url="github.com/1Danish-00/CompressorBot"),
-                Button.url("DEVELOPER", url="t.me/danish_00"),
+                Button.url("FOLLOW US", url="t.me/MoviezAddaKan"),
+                Button.url("DEVELOPER", url="t.me/captblacknight"),
             ],
         ],
     )
@@ -42,13 +42,13 @@ async def start(event):
 
 async def help(event):
     await event.reply(
-        "**🐠 A Quality CompressorBot**\n\n+This Bot Compress Videos With Negligible Quality Change.\n+Generate Sample Compressed Video\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Compress.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options"
+        "**🐠 A Quality CompressorBot**\n\n+This Bot Compress Videos With Negligible Quality Change.\n+Generate Sample Compressed Video\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Compress.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options.\nContact Owner @captblacknight"
     )
 
 
 async def ihelp(event):
     await event.edit(
-        "**🐠 A Quality CompressorBot**\n\n+This Bot Compress Videos With Negligible Quality Change.\n+Generate Sample Compressed Video\n+Screenshots Too\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Compress.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options",
+        "**🐠 A Quality CompressorBot**\n\n+This Bot Compress Videos With Negligible Quality Change.\n+Generate Sample Compressed Video\n+Screenshots Too\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Compress.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options.\nContact Owner @captblacknight",
         buttons=[Button.inline("BACK", data="beck")],
     )
 
@@ -60,8 +60,8 @@ async def beck(event):
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
-                Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER", url="t.me/danish_00"),
+                Button.url("FOLLOW US", url="t.me/MoviezAddaKan"),
+                Button.url("DEVELOPER", url="t.me/captblacknight"),
             ],
         ],
     )
